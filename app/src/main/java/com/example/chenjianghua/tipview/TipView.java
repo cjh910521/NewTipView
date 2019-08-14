@@ -334,7 +334,8 @@ public class TipView extends View {
             }
             if (i == 0 || i == mItemList.size() - 1) {
                 mItemRectList.add(new Rect(realLeft + getItemsAWidth(mItemList.size() - 1) - getItemsAWidth(mItemList.size() - (i + 1)),
-                        mItemBorder - mItemHeight, realLeft + getItemsAWidth(mItemList.size() - 1) - getItemsAWidth(mItemList.size() - (i + 1)) + getItemWidth(i), mItemBorder));
+                        mItemBorder - mItemHeight, realLeft + getItemsAWidth(mItemList.size() - 1)
+                        - getItemsAWidth(mItemList.size() - (i + 1)) + getItemWidth(i), mItemBorder));
             } else {
                 mItemRectList.add(new Rect(realLeft + getItemsAWidth(i), mItemBorder - mItemHeight, realLeft + getItemsAWidth(i + 1), mItemBorder));
             }
